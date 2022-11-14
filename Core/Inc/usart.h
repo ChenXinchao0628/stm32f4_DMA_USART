@@ -49,7 +49,7 @@ typedef struct
 	uint16_t usart_dma_recv_len;
 	/* 数据解析缓冲区 */
 	uint8_t usart_recv_buffer [USART_RECV_SIZE];
-	uint8_t usart_recv_buffer_2 [USART_RECV_SIZE];//用于DMA发送，防止发送钱被清除数据
+	uint8_t usart_recv_buffer_2 [USART_RECV_SIZE];//用于DMA发送，防止发送前被清除数据
 	/* DMA 数据缓冲区 */
 	uint8_t usart_dma_recv_buffer [USART_DMA_RECV_SIZE];
 }my_usart_type;
